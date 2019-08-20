@@ -1,6 +1,6 @@
 
 class FileRetriever
-  FileInfo = Struct.new(:fle_type,:file_name,:abs_path)
+  FileInfo = Struct.new(:file_type,:file_name,:abs_path)
 
   def initialize(skip_file_regs=[])
     default_skip_regs = ["^\\.+$","\\.DS_Store$"]
